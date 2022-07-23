@@ -1,10 +1,15 @@
 data = []
-for i in range(1, 1000001):
+for i in range(1, 1000000001):
     lst = [i]
     while True:
         if i == 1:
             lst[:] = lst[0], len(lst) - 1
             data.append(lst)
+            if data[0][1] <= lst[-1]:
+                data.clear()
+                data.append(lst)
+            else:
+                data.remove(data[-1])
             break
         elif i % 2 == 0:
             i //= 2
@@ -12,6 +17,5 @@ for i in range(1, 1000001):
         else:
             i = 3 * i + 1
             lst.append(i)
-max_date = max(data, key=lambda data: data[1])
-print(f"The number - {max_date[0]} max, "
-      f"has a sequence of - {max_date[1]} steps.")
+print(f"The number - {data[0][0]} max, "
+      f"has a sequence of - {data[0][1]} steps.")
