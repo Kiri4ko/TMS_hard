@@ -6,3 +6,5 @@
 4. Take into account the strong memory load and execution time when working with a range of large numbers. 
 5. To calculate one number, specify the number itself in the range of the first argument, 
 in the second argument add to the number plus one.
+6. **Collatz_any_num.py** collatz file allows you to search in any range, without loading RAM. 
+By storing in RAM only the largest sequence.
