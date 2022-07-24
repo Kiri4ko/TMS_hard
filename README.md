@@ -4,3 +4,4 @@
    the [Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
 2. The directory named **generator_function** - uses a generator_functions to generate pin codes
    and the game "Guess the number".
+3. The directory named **smart_game** - this is an intellectual mini-buckets game.
