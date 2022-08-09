@@ -1,21 +1,30 @@
-data = []
-for i in range(1, 1000000001):
-    lst = [i]
+max_way = 0
+number_collatz = 0
+
+
+def collatz(arg):
+    while arg > 0:
+        yield arg
+        arg -= 1
+
+
+check_num = collatz(1_000_000)
+
+for i in check_num:
+    number = i
+    score = 0
     while True:
         if i == 1:
-            lst[:] = lst[0], len(lst) - 1
-            data.append(lst)
-            if data[0][1] <= lst[-1]:
-                data.clear()
-                data.append(lst)
-            else:
-                data.remove(data[-1])
+            if score > max_way:
+                max_way = score
+                number_collatz = number
             break
         elif i % 2 == 0:
             i //= 2
-            lst.append(i)
+            score += 1
         else:
             i = 3 * i + 1
-            lst.append(i)
-print(f"The number - {data[0][0]} max, "
-      f"has a sequence of - {data[0][1]} steps.")
+            score += 1
+
+print(f"The number - {number_collatz} max, "
+      f"has a sequence of - {max_way} steps.")

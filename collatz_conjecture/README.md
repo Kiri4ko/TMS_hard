@@ -7,4 +7,4 @@
 5. To calculate one number, specify the number itself in the range of the first argument, 
 in the second argument add to the number plus one.
 6. **Collatz_any_num.py** collatz file allows you to search in any range, without loading RAM. 
-By storing in RAM only the largest sequence.
+By storing in RAM only the largest sequence. By default, line 11 specifies a range of 1 to 1 million numbers. 
