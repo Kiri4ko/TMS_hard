@@ -10,4 +10,4 @@
 8. The arguments output the path, keyword and encoding.
 9. Simplified version of the class_SearchWordInFile.
 
-##Setting dependencies in the file requirements.txt
+## *Setting dependencies in the file requirements.txt*
