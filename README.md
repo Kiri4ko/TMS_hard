@@ -7,3 +7,4 @@
 3. The directory named **smart_game** - this is an intellectual mini-buckets game.
 4. The directory named **decorators**  - this is a function of decorators.
 5. The directory named **search_in_file** - this is a search for files with keywords in them. 
+6. The directory named **project_on_flask** - this is a WEB project on Flask. 
