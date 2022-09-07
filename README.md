@@ -8,3 +8,4 @@
 4. The directory named **decorators**  - this is a function of decorators.
 5. The directory named **search_in_file** - this is a search for files with keywords in them. 
 6. The directory named **project_on_flask** - this is a WEB project on Flask. 
+7. The directory named **fastapi** - this is a API crypto coin parser on FastAPI. 
